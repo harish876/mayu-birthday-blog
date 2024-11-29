@@ -41,7 +41,7 @@ export function Home() {
       <FloatingHearts />
       <ConfettiEffects />
 
-      <div className="container px-4 py-16 space-y-24 mb-32">
+      <div className="px-4 py-16 space-y-24 mb-32">
         <section className="text-center space-y-8 relative">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -28,7 +28,7 @@ export function WishesPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-pink-50 dark:from-pink-950 dark:via-background dark:to-pink-950 overflow-hidden">
-      <div className="m-4 container px-4 py-16 space-y-12">
+      <div className="m-4 px-4 py-16 space-y-12">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
