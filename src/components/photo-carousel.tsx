@@ -9,11 +9,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import MayuMomPic from "../assets/mayu_mom_1.jpg";
 
 const photos = [
   {
-    src: MayuMomPic,
+    src: "/mayu_mom_1.jpg",
     caption: "Sweet 16 celebration with the whole family",
     year: "2016",
   },
@@ -71,7 +70,7 @@ export function PhotoCarousel() {
                 <Card>
                   <CardContent className="relative p-0 aspect-[4/3]">
                     <img
-                      src={photo.src}
+                      src="/mayu_mom_1.jpg"
                       alt={photo.caption}
                       className="w-full h-full object-cover rounded-lg"
                     />
