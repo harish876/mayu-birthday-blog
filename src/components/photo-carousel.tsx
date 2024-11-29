@@ -40,9 +40,9 @@ const photos = [
 ];
 
 export function PhotoCarousel() {
-  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const [, setCurrentIndex] = React.useState(0);
   const plugin = React.useRef(
-    Autoplay({ delay: 1000, stopOnInteraction: false })
+    Autoplay({ delay: 4000, stopOnInteraction: false })
   );
 
   return (
@@ -51,6 +51,7 @@ export function PhotoCarousel() {
       className="w-full max-w-5xl mx-auto"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
+      //@ts-expect-error
       onSlideChanged={(carousel) => {
         setCurrentIndex(carousel.selectedScrollSnap());
       }}

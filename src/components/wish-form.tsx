@@ -13,12 +13,17 @@ export function WishForm({ setReload }) {
 
   async function submitForm(e: { preventDefault: () => void }) {
     e.preventDefault();
-    if (!formRef.current.name.value || !formRef.current.message.value) {
+    if (!formRef.current) {
+      return;
+    }
+    //@ts-expect-error
+    if (!formRef.current.name.value || !formRef.current.message.valueOf()) {
       alert("please enter your name and message");
       return;
     }
     setPending(true);
     const { error } = await supabase.from("wishes").insert({
+      //@ts-expect-error
       name: formRef.current.name.value,
       message: formRef.current.message.value,
     });

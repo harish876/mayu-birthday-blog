@@ -16,7 +16,7 @@ export function WishesPage() {
 
   async function getWishes() {
     try {
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from("wishes")
         .select()
         .order("created_at", { ascending: false });
