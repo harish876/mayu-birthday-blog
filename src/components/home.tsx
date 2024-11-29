@@ -12,6 +12,7 @@ import { ConfettiEffects } from "@/components/confetti-effects";
 import { CountdownTimer } from "@/components/countdown-timer";
 import { WishCard } from "@/components/wish-card";
 import { supabase } from "@/lib/supabase";
+import { Link } from "react-router-dom";
 
 export function Home() {
   const [recentWishes, setRecentWishes] = useState([]);
@@ -126,11 +127,11 @@ export function Home() {
               asChild
               className="relative overflow-hidden bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700"
             >
-              <a href="/wishes">
+              <Link to="/wishes">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer" />
                 <Gift className="mr-2 h-4 w-4" />
                 Send a Wish
-              </a>
+              </Link>
             </Button>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -162,10 +163,10 @@ export function Home() {
                 asChild
                 className="relative overflow-hidden border-pink-500 hover:bg-pink-50 dark:hover:bg-pink-950"
               >
-                <a href="/wishes">
+                <Link to="/wishes">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-100/20 to-transparent animate-shimmer" />
                   View All Wishes
-                </a>
+                </Link>
               </Button>
             </motion.div>
           )}
