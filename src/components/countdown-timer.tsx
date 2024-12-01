@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const BIRTHDAY_DATE = new Date("2024-12-03T00:00:00");
+const BIRTHDAY_DATE = new Date("2024-12-03T00:00:00+05:30");
 
 function calculateTimeLeft() {
   const difference = +BIRTHDAY_DATE - +new Date();
@@ -54,7 +54,11 @@ export function CountdownTimer() {
 
   return (
     <div className="flex justify-center space-x-4 p-4 w-fit bg-inherit rounded-lg shadow-lg">
-      {timerComponents.length ? timerComponents : <span>Happy Birthday!</span>}
+      {timerComponents.length ? (
+        timerComponents
+      ) : (
+        <span>Happy Birthday Mayuuuuuuuu!</span>
+      )}
     </div>
   );
 }
