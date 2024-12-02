@@ -97,6 +97,26 @@ const photos = [
     year: "2013",
   },
   {
+    src: "/mayu_cake.jpeg",
+    caption: "Mayu Birthday Cake",
+    year: "2013",
+  },
+  {
+    src: "/mayu_kolam.jpeg",
+    caption: "Mayu Birthday Rangoli made by lovely mom",
+    year: "2013",
+  },
+  {
+    src: "/mayu_ooty.jpeg",
+    caption: "Mayu in ooty as a native",
+    year: "2013",
+  },
+  {
+    src: "/mayu_ooty_2.jpeg",
+    caption: "Mayu in ooty chilling",
+    year: "2013",
+  },
+  {
     src: "/mayu_solo_fin.jpeg",
     caption: "Fin. Happy Birthday Mayuuuuuu!",
     year: "2013",
